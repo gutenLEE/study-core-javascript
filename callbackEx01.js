@@ -1,12 +1,13 @@
 function func(datas, callback){
     
-    callback(res);
+    //callback(res); -> 이 위치는 undefined 뜸
 
     var res = 0;
     datas.forEach(item => {
         res += item;
     });
 
+    callback(res);
 }
 
 function printResult(res){
